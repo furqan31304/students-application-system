@@ -1,0 +1,43 @@
+@import "./variables.scss";
+
+//Font Variables and other
+$font-size-title: 20px;
+$font-weight-title: 600;
+$margin-bottom-top: 32px;
+$margin-right-toggler: 12px;
+$margin-left-btn: 18px;
+$img-width-toggler: 20px;
+
+.main-content-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $margin-bottom-top;
+  .sidebar-toggler {
+    display: flex;
+    align-items: center;
+    margin-right: $margin-right-toggler;
+
+    img {
+      width: $img-width-toggler;
+    }
+  }
+
+  .content-top-title {
+    color: $clr-primary;
+    font-size: $font-size-title;
+    font-weight: $font-weight-title;
+  }
+
+  .content-top-btn {
+    margin-left: $margin-left-btn;
+    &:hover{
+      color:$clr-primary
+    }
+  }
+
+  .content-top-left {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,25 @@
+@import "./variables.scss";
+// Color and Padding Variables
+$padding-default: 32px;
+$padding-medium: 20px;
+$padding-small: 16px;
+
+
+// Main Content Styles
+.main-content {
+  background-color: $clr-background;
+  flex: 1;
+  padding: $padding-default;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 1400px) {
+    padding-left: $padding-medium;
+    padding-right: $padding-medium;
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding-left: $padding-small;
+    padding-right: $padding-small;
+  }
+}
